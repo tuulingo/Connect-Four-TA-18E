@@ -1,0 +1,25 @@
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\build.props
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\adb.props
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\Connect four.csprojAssemblyReference.cache
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\resourcepaths.cache
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\res.flag
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\c34468711cb506073ce4509e040373fb5ad97256.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\85d5fc9be4dd439ca9c76315561af435d21880d0.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\513a7776bb72330bc29099bf94c00ca56700f04f.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\88362139ae245957ab702c718fa1ea894ccb8909.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\9d76f9763bd2b49646c66a7f67346135c088d81f.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\e94fe8dfeff8089a9c8f3f44e16f54ea68dc06eb.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\e8554a80c422d24783469dae0999adb95ac63de9.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\0f011e2dd28c46eeaf7b7218d32c700b86f0b8a7.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\1d6ba8b5c46ef7f8439adb61b2085d4077f87ef1.stamp
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\c34468711cb506073ce4509e040373fb5ad97256.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\85d5fc9be4dd439ca9c76315561af435d21880d0.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\513a7776bb72330bc29099bf94c00ca56700f04f.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\88362139ae245957ab702c718fa1ea894ccb8909.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\9d76f9763bd2b49646c66a7f67346135c088d81f.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\e94fe8dfeff8089a9c8f3f44e16f54ea68dc06eb.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\e8554a80c422d24783469dae0999adb95ac63de9.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\0f011e2dd28c46eeaf7b7218d32c700b86f0b8a7.flata
+C:\Users\opilane\source\Connect four\Connect four\obj\Debug\90\flata\1d6ba8b5c46ef7f8439adb61b2085d4077f87ef1.flata
