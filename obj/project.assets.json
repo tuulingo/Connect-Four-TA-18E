@@ -1532,24 +1532,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opilane\\.nuget\\packages\\": {},
+    "C:\\Users\\Opilane\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\Connect four\\Connect four\\Connect four.csproj",
+      "projectUniqueName": "C:\\Users\\Opilane\\Desktop\\Connect-Four-TA-18E\\Connect four.csproj",
       "projectName": "Connect four",
-      "projectPath": "C:\\Users\\opilane\\source\\Connect four\\Connect four\\Connect four.csproj",
-      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\source\\Connect four\\Connect four\\obj\\",
+      "projectPath": "C:\\Users\\Opilane\\Desktop\\Connect-Four-TA-18E\\Connect four.csproj",
+      "packagesPath": "C:\\Users\\Opilane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Opilane\\Desktop\\Connect-Four-TA-18E\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
