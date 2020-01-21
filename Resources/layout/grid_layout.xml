@@ -80,6 +80,7 @@ v"
         android:columnCount="8"
         android:orientation="vertical">
         <TextView
+            android:id="A1"
             android:text="Cell A1"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -90,6 +91,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="1" />
         <TextView
+            android:id="A2"
             android:text="Cell A2"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -100,6 +102,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="2" />
         <TextView
+            android:id="A3"
             android:text="Cell A3"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -110,6 +113,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="3" />
         <TextView
+            android:id="A4"
             android:text="Cell A4"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -120,6 +124,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="4" />
         <TextView
+            android:id="A5"
             android:text="Cell A5"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -130,6 +135,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="5" />
         <TextView
+            android:id="A6"
             android:text="Cell A6"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -140,6 +146,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="6"  />
         <TextView
+            android:id="A7"
             android:text="Cell A7"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -150,6 +157,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="7"/>
         <TextView
+            android:id="B1"
             android:text="Cell B1"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -160,6 +168,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="1" />
         <TextView
+            android:id="B2"
             android:text="Cell B2"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -170,6 +179,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="2" />
         <TextView
+            android:id="B3"
             android:text="Cell B3"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -180,6 +190,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="3" />
         <TextView
+            android:id="B4"
             android:text="Cell B4"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -190,6 +201,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="4" />
         <TextView
+            android:id="B5"
             android:text="Cell B5"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -200,6 +212,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="5" />
         <TextView
+            android:id="B6"
             android:text="Cell B6"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -210,6 +223,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="6"  />
         <TextView
+            android:id="B7"
             android:text="Cell B7"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -220,6 +234,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="7"/>
         <TextView
+            android:id="C1"
             android:text="Cell C1"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -230,6 +245,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="1" />
         <TextView
+            android:id="C2"
             android:text="Cell C2"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -240,6 +256,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="2" />
         <TextView
+            android:id="C3"
             android:text="Cell C3"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -250,6 +267,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="3" />
         <TextView
+            android:id="C4"
             android:text="Cell C4"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -260,6 +278,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="4" />
         <TextView
+            android:id="C5"
             android:text="Cell C5"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -270,6 +289,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="5" />
         <TextView
+            android:id="C6"
             android:text="Cell C6"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -280,6 +300,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="6"  />
         <TextView
+            android:id="C7"
             android:text="Cell C7"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -290,6 +311,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="7"/>
         <TextView
+            android:id="D1"
             android:text="Cell D1"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -300,6 +322,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="1" />
         <TextView
+            android:id="D2"
             android:text="Cell D2"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -310,6 +333,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="2" />
         <TextView
+            android:id="D3"
             android:text="Cell D3"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -320,6 +344,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="3" />
         <TextView
+            android:id="D4"
             android:text="Cell D4"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -330,6 +355,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="4" />
         <TextView
+            android:id="D5"
             android:text="Cell D5"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -340,6 +366,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="5" />
         <TextView
+            android:id="D6"
             android:text="Cell D6"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -350,6 +377,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="6"  />
         <TextView
+            android:id="D7"
             android:text="Cell D7"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -360,6 +388,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="7"/>
         <TextView
+            android:id="E1"
             android:text="Cell E1"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -370,6 +399,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="1" />
         <TextView
+            android:id="E2"
             android:text="Cell E2"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -380,6 +410,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="2" />
         <TextView
+            android:id="E3"
             android:text="Cell E3"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -390,6 +421,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="3" />
         <TextView
+            android:id="E4"
             android:text="Cell E4"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -400,6 +432,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="4" />
         <TextView
+            android:id="E5"
             android:text="Cell E5"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -410,6 +443,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="5" />
         <TextView
+            android:id="E6"
             android:text="Cell E6"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -420,6 +454,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="6"  />
         <TextView
+            android:id="E7"
             android:text="Cell E7"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -430,6 +465,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="7"/>
         <TextView
+            android:id="F1"
             android:text="Cell F1"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -440,6 +476,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="1" />
         <TextView
+            android:id="F2"
             android:text="Cell F2"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -450,6 +487,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="2" />
         <TextView
+            android:id="F3"
             android:text="Cell F3"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -460,6 +498,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="3" />
         <TextView
+            android:id="F4"
             android:text="Cell F4"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -470,6 +509,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="4" />
         <TextView
+            android:id="F5"
             android:text="Cell F5"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -480,6 +520,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="5" />
         <TextView
+            android:id="F6"
             android:text="Cell F6"
             android:textSize="14dip"
             android:minHeight="50dp"
@@ -490,6 +531,7 @@ v"
             android:layout_width="50dp"
             android:layout_column="6"  />
         <TextView
+            android:id="F7"
             android:text="Cell F7"
             android:textSize="14dip"
             android:minHeight="50dp"
