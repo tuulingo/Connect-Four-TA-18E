@@ -10,15 +10,23 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+
 namespace Connect_four
 {
     [Activity(Label = "GameActivity")]
     public class GameActivity : Activity
     {
+        private TextView[] aColumn = new TextView[6];
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.grid_layout);
+            for (int i = 0; i < 6; i++)
+            {
+                var textViewID = "A" + i;
+                aColumn[i] = FindViewById<TextView>(Resource.Id.textViewID);
+
+            }
 
             // Create your application here
 

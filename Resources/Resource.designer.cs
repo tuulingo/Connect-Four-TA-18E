@@ -3244,9 +3244,6 @@ namespace Connect_four
 			// aapt resource value: 0x7F080005
 			public const int A6 = 2131230725;
 			
-			// aapt resource value: 0x7F080006
-			public const int A7 = 2131230726;
-			
 			// aapt resource value: 0x7F080041
 			public const int actions = 2131230785;
 			
@@ -3313,8 +3310,8 @@ namespace Connect_four
 			// aapt resource value: 0x7F080045
 			public const int all = 2131230789;
 			
-			// aapt resource value: 0x7F080007
-			public const int ALT = 2131230727;
+			// aapt resource value: 0x7F080006
+			public const int ALT = 2131230726;
 			
 			// aapt resource value: 0x7F080046
 			public const int always = 2131230790;
@@ -3325,26 +3322,23 @@ namespace Connect_four
 			// aapt resource value: 0x7F080048
 			public const int auto = 2131230792;
 			
+			// aapt resource value: 0x7F080007
+			public const int B1 = 2131230727;
+			
 			// aapt resource value: 0x7F080008
-			public const int B1 = 2131230728;
+			public const int B2 = 2131230728;
 			
 			// aapt resource value: 0x7F080009
-			public const int B2 = 2131230729;
+			public const int B3 = 2131230729;
 			
 			// aapt resource value: 0x7F08000A
-			public const int B3 = 2131230730;
+			public const int B4 = 2131230730;
 			
 			// aapt resource value: 0x7F08000B
-			public const int B4 = 2131230731;
+			public const int B5 = 2131230731;
 			
 			// aapt resource value: 0x7F08000C
-			public const int B5 = 2131230732;
-			
-			// aapt resource value: 0x7F08000D
-			public const int B6 = 2131230733;
-			
-			// aapt resource value: 0x7F08000E
-			public const int B7 = 2131230734;
+			public const int B6 = 2131230732;
 			
 			// aapt resource value: 0x7F080049
 			public const int beginning = 2131230793;
@@ -3373,26 +3367,23 @@ namespace Connect_four
 			// aapt resource value: 0x7F080051
 			public const int buttonPanel = 2131230801;
 			
+			// aapt resource value: 0x7F08000D
+			public const int C1 = 2131230733;
+			
+			// aapt resource value: 0x7F08000E
+			public const int C2 = 2131230734;
+			
 			// aapt resource value: 0x7F08000F
-			public const int C1 = 2131230735;
+			public const int C3 = 2131230735;
 			
 			// aapt resource value: 0x7F080010
-			public const int C2 = 2131230736;
+			public const int C4 = 2131230736;
 			
 			// aapt resource value: 0x7F080011
-			public const int C3 = 2131230737;
+			public const int C5 = 2131230737;
 			
 			// aapt resource value: 0x7F080012
-			public const int C4 = 2131230738;
-			
-			// aapt resource value: 0x7F080013
-			public const int C5 = 2131230739;
-			
-			// aapt resource value: 0x7F080014
-			public const int C6 = 2131230740;
-			
-			// aapt resource value: 0x7F080015
-			public const int C7 = 2131230741;
+			public const int C6 = 2131230738;
 			
 			// aapt resource value: 0x7F080052
 			public const int center = 2131230802;
@@ -3430,8 +3421,8 @@ namespace Connect_four
 			// aapt resource value: 0x7F08005D
 			public const int coordinator = 2131230813;
 			
-			// aapt resource value: 0x7F080016
-			public const int CTRL = 2131230742;
+			// aapt resource value: 0x7F080013
+			public const int CTRL = 2131230739;
 			
 			// aapt resource value: 0x7F08005E
 			public const int custom = 2131230814;
@@ -3439,26 +3430,23 @@ namespace Connect_four
 			// aapt resource value: 0x7F08005F
 			public const int customPanel = 2131230815;
 			
+			// aapt resource value: 0x7F080014
+			public const int D1 = 2131230740;
+			
+			// aapt resource value: 0x7F080015
+			public const int D2 = 2131230741;
+			
+			// aapt resource value: 0x7F080016
+			public const int D3 = 2131230742;
+			
 			// aapt resource value: 0x7F080017
-			public const int D1 = 2131230743;
+			public const int D4 = 2131230743;
 			
 			// aapt resource value: 0x7F080018
-			public const int D2 = 2131230744;
+			public const int D5 = 2131230744;
 			
 			// aapt resource value: 0x7F080019
-			public const int D3 = 2131230745;
-			
-			// aapt resource value: 0x7F08001A
-			public const int D4 = 2131230746;
-			
-			// aapt resource value: 0x7F08001B
-			public const int D5 = 2131230747;
-			
-			// aapt resource value: 0x7F08001C
-			public const int D6 = 2131230748;
-			
-			// aapt resource value: 0x7F08001D
-			public const int D7 = 2131230749;
+			public const int D6 = 2131230745;
 			
 			// aapt resource value: 0x7F080060
 			public const int decor_content_parent = 2131230816;
@@ -3484,26 +3472,23 @@ namespace Connect_four
 			// aapt resource value: 0x7F080067
 			public const int disableHome = 2131230823;
 			
+			// aapt resource value: 0x7F08001A
+			public const int E1 = 2131230746;
+			
+			// aapt resource value: 0x7F08001B
+			public const int E2 = 2131230747;
+			
+			// aapt resource value: 0x7F08001C
+			public const int E3 = 2131230748;
+			
+			// aapt resource value: 0x7F08001D
+			public const int E4 = 2131230749;
+			
 			// aapt resource value: 0x7F08001E
-			public const int E1 = 2131230750;
+			public const int E5 = 2131230750;
 			
 			// aapt resource value: 0x7F08001F
-			public const int E2 = 2131230751;
-			
-			// aapt resource value: 0x7F080020
-			public const int E3 = 2131230752;
-			
-			// aapt resource value: 0x7F080021
-			public const int E4 = 2131230753;
-			
-			// aapt resource value: 0x7F080022
-			public const int E5 = 2131230754;
-			
-			// aapt resource value: 0x7F080023
-			public const int E6 = 2131230755;
-			
-			// aapt resource value: 0x7F080024
-			public const int E7 = 2131230756;
+			public const int E6 = 2131230751;
 			
 			// aapt resource value: 0x7F080068
 			public const int edit_query = 2131230824;
@@ -3526,26 +3511,23 @@ namespace Connect_four
 			// aapt resource value: 0x7F08006D
 			public const int expand_activities_button = 2131230829;
 			
+			// aapt resource value: 0x7F080020
+			public const int F1 = 2131230752;
+			
+			// aapt resource value: 0x7F080021
+			public const int F2 = 2131230753;
+			
+			// aapt resource value: 0x7F080022
+			public const int F3 = 2131230754;
+			
+			// aapt resource value: 0x7F080023
+			public const int F4 = 2131230755;
+			
+			// aapt resource value: 0x7F080024
+			public const int F5 = 2131230756;
+			
 			// aapt resource value: 0x7F080025
-			public const int F1 = 2131230757;
-			
-			// aapt resource value: 0x7F080026
-			public const int F2 = 2131230758;
-			
-			// aapt resource value: 0x7F080027
-			public const int F3 = 2131230759;
-			
-			// aapt resource value: 0x7F080028
-			public const int F4 = 2131230760;
-			
-			// aapt resource value: 0x7F080029
-			public const int F5 = 2131230761;
-			
-			// aapt resource value: 0x7F08002A
-			public const int F6 = 2131230762;
-			
-			// aapt resource value: 0x7F08002B
-			public const int F7 = 2131230763;
+			public const int F6 = 2131230757;
 			
 			// aapt resource value: 0x7F08006F
 			public const int fill = 2131230831;
@@ -3565,8 +3547,26 @@ namespace Connect_four
 			// aapt resource value: 0x7F080074
 			public const int forever = 2131230836;
 			
+			// aapt resource value: 0x7F080026
+			public const int FUNCTION = 2131230758;
+			
+			// aapt resource value: 0x7F080027
+			public const int G1 = 2131230759;
+			
+			// aapt resource value: 0x7F080028
+			public const int G2 = 2131230760;
+			
+			// aapt resource value: 0x7F080029
+			public const int G3 = 2131230761;
+			
+			// aapt resource value: 0x7F08002A
+			public const int G4 = 2131230762;
+			
+			// aapt resource value: 0x7F08002B
+			public const int G5 = 2131230763;
+			
 			// aapt resource value: 0x7F08002C
-			public const int FUNCTION = 2131230764;
+			public const int G6 = 2131230764;
 			
 			// aapt resource value: 0x7F080075
 			public const int gameButton1 = 2131230837;
