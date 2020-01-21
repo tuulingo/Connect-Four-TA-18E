@@ -18,6 +18,7 @@ namespace Connect_four
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.grid_layout);
 
             // Create your application here
 

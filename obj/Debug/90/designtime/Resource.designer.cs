@@ -3479,34 +3479,34 @@ namespace Connect_four
 			public const int gameButton7 = 2131230807;
 			
 			// aapt resource value: 0x7F080058
-			public const int ghost_view = 2131230808;
+			public const int gameTitle = 2131230808;
 			
 			// aapt resource value: 0x7F080059
-			public const int group_divider = 2131230809;
+			public const int ghost_view = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int home = 2131230810;
+			public const int group_divider = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int homeAsUp = 2131230811;
+			public const int home = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
-			public const int icon = 2131230812;
+			public const int homeAsUp = 2131230812;
 			
 			// aapt resource value: 0x7F08005D
-			public const int icon1 = 2131230813;
+			public const int icon = 2131230813;
 			
 			// aapt resource value: 0x7F08005E
-			public const int icon_group = 2131230814;
+			public const int icon1 = 2131230814;
 			
 			// aapt resource value: 0x7F08005F
-			public const int ifRoom = 2131230815;
+			public const int icon_group = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int image = 2131230816;
+			public const int ifRoom = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int imageButton1 = 2131230817;
+			public const int image = 2131230817;
 			
 			// aapt resource value: 0x7F080062
 			public const int info = 2131230818;
@@ -3809,52 +3809,55 @@ namespace Connect_four
 			public const int title_template = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int top = 2131230915;
+			public const int toGameButton = 2131230915;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int topPanel = 2131230916;
+			public const int top = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int touch_outside = 2131230917;
+			public const int topPanel = 2131230917;
 			
 			// aapt resource value: 0x7F0800C6
-			public const int transition_current_scene = 2131230918;
+			public const int touch_outside = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int transition_layout_save = 2131230919;
+			public const int transition_current_scene = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int transition_position = 2131230920;
+			public const int transition_layout_save = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int transition_scene_layoutid_cache = 2131230921;
+			public const int transition_position = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int transition_transform = 2131230922;
+			public const int transition_scene_layoutid_cache = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int uniform = 2131230923;
+			public const int transition_transform = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int unlabeled = 2131230924;
+			public const int uniform = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int up = 2131230925;
+			public const int unlabeled = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int useLogo = 2131230926;
+			public const int up = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int view_offset_helper = 2131230927;
+			public const int useLogo = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int visible = 2131230928;
+			public const int view_offset_helper = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int withText = 2131230929;
+			public const int visible = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int wrap_content = 2131230930;
+			public const int withText = 2131230930;
+			
+			// aapt resource value: 0x7F0800D3
+			public const int wrap_content = 2131230931;
 			
 			static Id()
 			{

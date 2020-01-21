@@ -3,6 +3,8 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Content;
+using System;
 
 namespace Connect_four
 {
@@ -15,12 +17,23 @@ namespace Connect_four
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            var gameButton = FindViewById<Button>(Resource.Id.toGameButton);
+
+            gameButton.Click += gameButton_Click;
+
+            void gameButton_Click(object sender, EventArgs e)
+            {
+                var intent = new Intent(this, typeof(GameActivity));
+                StartActivity(intent);
+            }
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
         }
     }
 }
