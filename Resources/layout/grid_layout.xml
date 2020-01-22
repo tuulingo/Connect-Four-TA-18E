@@ -10,11 +10,12 @@
         android:id="@+id/linearLayout1" >
     <LinearLayout
         android:orientation="horizontal"
+        android:layout_gravity="center"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="17dp"
+        android:layout_marginStart="21dp"
         android:id="@+id/linearLayout2" >
     <Button
         android:text="I
@@ -74,12 +75,12 @@ v"
         android:id="@+id/gameButton7" />
     </LinearLayout>
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:rowCount="8"
         android:columnCount="8"
-        android:layout_marginLeft="17dp"
-        android:layout_gravity="bottom"
+        android:layout_gravity="center" 
         android:orientation="vertical">
         <TextView
             android:id="@+id/A1"

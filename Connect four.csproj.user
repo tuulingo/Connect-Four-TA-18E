@@ -4,6 +4,6 @@
     <SelectedDevice>OnePlus A6013</SelectedDevice>
     <DefaultDevice>my_device</DefaultDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
-    <AndroidDesignerPreferredDevice>Nexus 10</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>Nexus 5X</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

@@ -16,6 +16,8 @@ namespace Connect_four
     [Activity(Label = "GameActivity")]
     public class GameActivity : Activity 
     {
+        private bool player1Turn = true;
+
         private TextView[] aColumn = new TextView[6];
         private TextView[] bColumn = new TextView[6];
         private TextView[] cColumn = new TextView[6];
@@ -28,67 +30,63 @@ namespace Connect_four
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.grid_layout);
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 7; i++)
+            {
+                var buttonId = $"gameButton{i}";
+                var view = FindViewById<Button>(Resources.GetIdentifier(buttonId, "id", PackageName));
+                gameButton[i] = view;
+            }
+
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"A{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 aColumn[i] = view;
             }
 
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"B{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
+                bColumn[i] = view;
             }
 
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"C{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
+                cColumn[i] = view;
             }
 
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"D{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
+                dColumn[i] = view;
             }
 
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"E{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
+                eColumn[i] = view;
             }
 
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"F{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
+                fColumn[i] = view;
             }
 
-            for (int i = 1; i <= 6; i++)
+            for (int i = 0; i < 6; i++)
             {
                 var textViewId = $"G{i}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
+                gColumn[i] = view;
             }
 
-            for (int i = 1; i <= 7; i++)
-            {
-                var buttonId = $"gameButton{i}";
-                var view = FindViewById<Button>(Resources.GetIdentifier(buttonId, "id", PackageName));
-            }
             // Create your application here 
-
-            
-            
-
-            // gamebuttons
-            var gameButton1 = FindViewById<Button>(Resource.Id.gameButton1);
-            var gameButton2 = FindViewById<Button>(Resource.Id.gameButton2);
-            var gameButton3 = FindViewById<Button>(Resource.Id.gameButton3);
-            var gameButton4 = FindViewById<Button>(Resource.Id.gameButton4);
-            var gameButton5 = FindViewById<Button>(Resource.Id.gameButton5);
-            var gameButton6 = FindViewById<Button>(Resource.Id.gameButton6);
-            var gameButton7 = FindViewById<Button>(Resource.Id.gameButton7);
 
            
         }
@@ -98,16 +96,54 @@ namespace Connect_four
             {
                 var tag = btn.Tag;
                 btn.Click += OnClick;
-                if (tag == gameButton1)
+                if (tag == gameButton[0])
                 {
-                   // method
-                   // DoSomething();
+                    aColumnClick();
                 }
-                else if (tag == gamebutton2)
+                else if (tag == gameButton[1])
                 {
                    // DoSomethingElse();
                 }
+                else if (tag == gameButton[2])
+                {
+                    // DoSomethingElse();
+                }
+                else if (tag == gameButton[3])
+                {
+                    // DoSomethingElse();
+                }
+                else if (tag == gameButton[4])
+                {
+                    // DoSomethingElse();
+                }
+                else if (tag == gameButton[5])
+                {
+                    // DoSomethingElse();
+                }
+                else if (tag == gameButton[6])
+                {
+                    // DoSomethingElse();
+                }
             }
+        }
+
+        public void aColumnClick()
+        {
+            var defaultColor = "@drawable/border".Contains("@+id/defaultColor");
+            var playerColor1 = Resources.GetColor(Resource.Color.player1);
+            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            if (aColumn[0].Background.ToString().Equals(defaultColor))
+            {
+                if (player1Turn == true)
+                {
+                    aColumn[0].Background.ToString().Equals(playerColor1);
+                }
+                else
+                {
+                    aColumn[0].Background.ToString().Equals(playerColor2);
+                }
+            }
+
         }
     }
 }
