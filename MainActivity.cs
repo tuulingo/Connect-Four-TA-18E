@@ -24,11 +24,11 @@ namespace Connect_four
 
             var GridA1 = FindViewById<TextView>(Resource.Id.A1);
 
-            var gameButton = FindViewById<Button>(Resource.Id.toGameButton);
+            var toGameButton = FindViewById<Button>(Resource.Id.toGameButton);
 
-            gameButton.Click += gameButton_Click;
+            toGameButton.Click += toGameButton_Click;
 
-            void gameButton_Click(object sender, EventArgs e)
+            void toGameButton_Click(object sender, EventArgs e)
             {
                 var intent = new Intent(this, typeof(GameActivity));
                 StartActivity(intent);

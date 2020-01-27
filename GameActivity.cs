@@ -5,6 +5,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Graphics.Drawables;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -86,6 +87,17 @@ namespace Connect_four
                 gColumn[i] = view;
             }
 
+            gameButton[1].Click += delegate
+            {
+                aColumnClick();
+            };
+
+            gameButton[2].Click += delegate
+            {
+                Toast.MakeText(this, "Hello from " + gameButton[2], ToastLength.Long).Show();
+            };
+
+
             // Create your application here 
 
            
@@ -94,7 +106,7 @@ namespace Connect_four
         {
             if (sender is Button btn)
             {
-                var tag = btn.Tag;
+                var tag = btn;
                 btn.Click += OnClick;
                 if (tag == gameButton[0])
                 {
@@ -102,7 +114,7 @@ namespace Connect_four
                 }
                 else if (tag == gameButton[1])
                 {
-                   // DoSomethingElse();
+                    Toast.MakeText(this, "Hello from " , ToastLength.Long).Show();
                 }
                 else if (tag == gameButton[2])
                 {
@@ -129,20 +141,24 @@ namespace Connect_four
 
         public void aColumnClick()
         {
-            var defaultColor = "@drawable/border".Contains("@+id/defaultColor");
+            var test = FindViewById<TextView>(Resource.Id.A1);
+            var defaultColor = Resources.GetColor(Resource.Color.white);
             var playerColor1 = Resources.GetColor(Resource.Color.player1);
             var playerColor2 = Resources.GetColor(Resource.Color.player2);
-            if (aColumn[0].Background.ToString().Equals(defaultColor))
-            {
-                if (player1Turn == true)
-                {
-                    aColumn[0].Background.ToString().Equals(playerColor1);
-                }
-                else
-                {
-                    aColumn[0].Background.ToString().Equals(playerColor2);
-                }
-            }
+            //ColorDrawable buttonColor = (ColorDrawable)myview.
+            //int colorId = buttonColor.getColor();
+
+            //if (test.getcolo == defaultColor)
+            //{
+            //    if (player1Turn == true)
+            //    {
+            //        test.Background.Equals(playerColor1);
+            //    }
+            //    else
+            //    {
+            //        test.Background.Equals(playerColor2);
+            //    }
+            //}
 
         }
     }

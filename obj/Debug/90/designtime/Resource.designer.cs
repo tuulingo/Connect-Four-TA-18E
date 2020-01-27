@@ -2197,6 +2197,9 @@ namespace Connect_four
 			// aapt resource value: 0x7F050088
 			public const int tooltip_background_light = 2131034248;
 			
+			// aapt resource value: 0x7F050089
+			public const int white = 2131034249;
+			
 			static Color()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
