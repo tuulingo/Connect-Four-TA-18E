@@ -145,20 +145,20 @@ namespace Connect_four
             var defaultColor = Resources.GetColor(Resource.Color.white);
             var playerColor1 = Resources.GetColor(Resource.Color.player1);
             var playerColor2 = Resources.GetColor(Resource.Color.player2);
-            //ColorDrawable buttonColor = (ColorDrawable)myview.
-            //int colorId = buttonColor.getColor();
+            ColorDrawable canvasColor = (ColorDrawable)test.Background;
+            int colorId = canvasColor.Color;
 
-            //if (test.getcolo == defaultColor)
-            //{
-            //    if (player1Turn == true)
-            //    {
-            //        test.Background.Equals(playerColor1);
-            //    }
-            //    else
-            //    {
-            //        test.Background.Equals(playerColor2);
-            //    }
-            //}
+            if (colorId == defaultColor)
+            {
+                if (player1Turn == true)
+                {
+                    test.Background.Equals(playerColor1);
+                }
+                else
+                {
+                    test.Background.Equals(playerColor2);
+                }
+            }
 
         }
     }
