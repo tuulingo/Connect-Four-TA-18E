@@ -794,7 +794,6 @@ C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\app_shared_libraries\armeabi-
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\app_shared_libraries\x86\libxamarin-app.so
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\android\bin\classes.dex
-C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\_BuildAdditionalResourcesCache.stamp
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\_CleanIntermediateIfNuGetsChange.stamp
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\_CompileToDalvik.stamp
@@ -1086,3 +1085,4 @@ C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_CopyPdbFil
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

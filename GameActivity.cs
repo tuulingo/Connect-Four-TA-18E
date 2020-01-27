@@ -33,81 +33,82 @@ namespace Connect_four
             SetContentView(Resource.Layout.grid_layout);
             for (int i = 0; i < 7; i++)
             {
-                var buttonId = $"gameButton{i}";
+                var buttonId = $"gameButton{i+1}";
                 var view = FindViewById<Button>(Resources.GetIdentifier(buttonId, "id", PackageName));
                 gameButton[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"A{i}";
+                var textViewId = $"A{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 aColumn[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"B{i}";
+                var textViewId = $"B{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 bColumn[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"C{i}";
+                var textViewId = $"C{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 cColumn[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"D{i}";
+                var textViewId = $"D{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 dColumn[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"E{i}";
+                var textViewId = $"E{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 eColumn[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"F{i}";
+                var textViewId = $"F{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 fColumn[i] = view;
             }
 
             for (int i = 0; i < 6; i++)
             {
-                var textViewId = $"G{i}";
+                var textViewId = $"G{i+1}";
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 gColumn[i] = view;
             }
 
-            gameButton[1].Click += delegate
+            gameButton[0].Click += delegate
             {
                 aColumnClick();
             };
 
-            gameButton[2].Click += delegate
-            {
-                Toast.MakeText(this, "Hello from " + gameButton[2], ToastLength.Long).Show();
-            };
+            //gameButton[2].Click += delegate
+            //{
+            //    Toast.MakeText(this, "Hello from " + gameButton[2], ToastLength.Long).Show();
+            //};
 
 
             // Create your application here 
 
-           
+
         }
         private void OnClick(object sender, EventArgs args)
         {
             if (sender is Button btn)
             {
-                var tag = btn;
                 btn.Click += OnClick;
+                var tag = btn;
+
                 if (tag == gameButton[0])
                 {
                     aColumnClick();
@@ -141,23 +142,36 @@ namespace Connect_four
 
         public void aColumnClick()
         {
-            var test = FindViewById<TextView>(Resource.Id.A1);
+            var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
             var playerColor1 = Resources.GetColor(Resource.Color.player1);
             var playerColor2 = Resources.GetColor(Resource.Color.player2);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (colorId == defaultColor)
+            if (aColumn[5].Background != canvasColor)
             {
                 if (player1Turn == true)
                 {
-                    test.Background.Equals(playerColor1);
+                    aColumn[5].SetBackgroundColor(playerColor1);
                 }
                 else
                 {
-                    test.Background.Equals(playerColor2);
+                    aColumn[5].SetBackgroundColor(playerColor2);
                 }
+
+            }
+            else if (aColumn[4].Background != canvasColor)
+            {
+                if (player1Turn == true)
+                {
+                    aColumn[4].SetBackgroundColor(playerColor1);
+                }
+                else
+                {
+                    aColumn[4].SetBackgroundColor(playerColor2);
+                }
+
             }
 
         }
