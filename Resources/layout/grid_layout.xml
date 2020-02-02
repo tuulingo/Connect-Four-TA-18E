@@ -98,6 +98,7 @@ v"
             android:layout_column="1"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/B1"
@@ -113,6 +114,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="2"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/C1"
@@ -128,6 +130,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="3"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/D1"
@@ -143,6 +146,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="4"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/E1"
@@ -158,6 +162,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="5"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"
             />
         <TextView
@@ -174,6 +179,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="6"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/G1"
@@ -189,6 +195,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="7"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/A2"
@@ -204,6 +211,7 @@ v"
             android:layout_column="1"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/B2"
@@ -218,6 +226,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="2"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/C2"
@@ -232,6 +241,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="3"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/D2"
@@ -246,6 +256,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="4"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/E2"
@@ -260,6 +271,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="5"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/F2"
@@ -274,6 +286,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="6"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/G2"
@@ -288,6 +301,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="7"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/A3"
@@ -303,6 +317,7 @@ v"
             android:layout_column="1"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/B3"
@@ -317,6 +332,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="2"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/C3"
@@ -331,6 +347,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="3"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/D3"
@@ -345,6 +362,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="4"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/E3"
@@ -359,6 +377,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="5"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/F3"
@@ -373,6 +392,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="6"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/G3"
@@ -387,6 +407,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="7"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/A4"
@@ -402,6 +423,7 @@ v"
             android:layout_column="1"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/B4"
@@ -416,6 +438,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="2"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/C4"
@@ -430,6 +453,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="3"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/D4"
@@ -444,6 +468,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="4"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/E4"
@@ -458,6 +483,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="5"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/F4"
@@ -472,6 +498,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="6"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/G4"
@@ -486,6 +513,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="7"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/A5"
@@ -501,6 +529,7 @@ v"
             android:layout_column="1"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/B5"
@@ -515,6 +544,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="2"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/C5"
@@ -529,6 +559,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="3"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/D5"
@@ -543,6 +574,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="4"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/E5"
@@ -557,6 +589,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="5"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/F5"
@@ -571,6 +604,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="6"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/G5"
@@ -585,6 +619,7 @@ v"
             android:layout_columnWeight="1"
             android:layout_column="7"
             android:layout_marginTop="10dp"
+            android:alpha="0.99"
             android:layout_marginRight="10dp"/>
         <TextView
             android:id="@+id/A6"
@@ -601,6 +636,7 @@ v"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:id="@+id/B6"
@@ -616,6 +652,7 @@ v"
             android:layout_column="2"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:id="@+id/C6"
@@ -631,6 +668,7 @@ v"
             android:layout_column="3"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:id="@+id/D6"
@@ -646,6 +684,7 @@ v"
             android:layout_column="4"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:id="@+id/E6"
@@ -661,6 +700,7 @@ v"
             android:layout_column="5"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:id="@+id/F6"
@@ -676,6 +716,7 @@ v"
             android:layout_column="6"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
         <TextView
             android:id="@+id/G6"
@@ -691,6 +732,7 @@ v"
             android:layout_column="7"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
+            android:alpha="0.99"
             android:layout_marginBottom="10dp"/>
 
     </GridLayout>
