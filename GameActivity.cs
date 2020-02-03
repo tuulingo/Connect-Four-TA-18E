@@ -27,6 +27,7 @@ namespace Connect_four
         private int fClickCounter = 0;
         private int gClickCounter = 0;
 
+
         private TextView[] aColumn = new TextView[6];
         private TextView[] bColumn = new TextView[6];
         private TextView[] cColumn = new TextView[6];
@@ -95,123 +96,182 @@ namespace Connect_four
                 gColumn[i] = view;
             }
 
+            Context context = Application.Context;
+            string text = "Column is full";
+            ToastLength duration = ToastLength.Short;
+
             gameButton[0].Click += delegate
             {
-                aColumnClick();
-                if (player1Turn == true)
+                if (aClickCounter < 6)
                 {
-                    player1Turn = false;
+                    aClickCounter++;
+                    aColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
             };
 
             gameButton[1].Click += delegate
             {
-                bColumnClick();
-                if (player1Turn == true)
+                if (bClickCounter < 6)
                 {
-                    player1Turn = false;
+                    bClickCounter++;
+                    bColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
             };
 
             gameButton[2].Click += delegate
             {
-                cColumnClick();
-                if (player1Turn == true)
+                if (cClickCounter < 6)
                 {
-                    player1Turn = false;
+                    cClickCounter++;
+                    cColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
             };
 
             gameButton[3].Click += delegate
             {
-                dColumnClick();
-                if (player1Turn == true)
+                if (dClickCounter < 6)
                 {
-                    player1Turn = false;
+                    dClickCounter++;
+                    dColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
             };
 
             gameButton[4].Click += delegate
             {
-                eColumnClick();
-                if (player1Turn == true)
+                if (eClickCounter < 6)
                 {
-                    player1Turn = false;
+                    eClickCounter++;
+                    eColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
             };
 
             gameButton[5].Click += delegate
             {
-                fColumnClick();
-                if (player1Turn == true)
+                if (fClickCounter < 6)
                 {
-                    player1Turn = false;
+                    fClickCounter++;
+                    fColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
             };
 
             gameButton[6].Click += delegate
             {
-                gColumnClick();
-                if (player1Turn == true)
+                if (gClickCounter < 6)
                 {
-                    player1Turn = false;
+                    gClickCounter++;
+                    gColumnClick();
+                    if (player1Turn == true)
+                    {
+                        player1Turn = false;
+                    }
+                    else player1Turn = true;
                 }
-                else player1Turn = true;
+                else
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                }
+
             };
 
-            //gameButton[2].Click += delegate
-            //{
-            //    Toast.MakeText(this, "Hello from " + gameButton[2], ToastLength.Long).Show();
-            //};
-
-
-            // Create your application here 
-
-
         }
-        private void OnClick(object sender, EventArgs args)
-        {
-            if (sender is Button btn)
-            {
-                btn.Click += OnClick;
-                var tag = btn;
+        //private void OnClick(object sender, EventArgs args)
+        //{
+        //    if (sender is Button btn)
+        //    {
+        //        btn.Click += OnClick;
+        //        var tag = btn;
 
-                if (tag == gameButton[0])
-                {
-                    aColumnClick();
-                }
-                else if (tag == gameButton[1])
-                {
-                    Toast.MakeText(this, "Hello from " , ToastLength.Long).Show();
-                }
-                else if (tag == gameButton[2])
-                {
-                    // DoSomethingElse();
-                }
-                else if (tag == gameButton[3])
-                {
-                    // DoSomethingElse();
-                }
-                else if (tag == gameButton[4])
-                {
-                    // DoSomethingElse();
-                }
-                else if (tag == gameButton[5])
-                {
-                    // DoSomethingElse();
-                }
-                else if (tag == gameButton[6])
-                {
-                    // DoSomethingElse();
-                }
-            }
-        }
+        //        if (tag == gameButton[0])
+        //        {
+        //            aColumnClick();
+        //        }
+        //        else if (tag == gameButton[1])
+        //        {
+        //            Toast.MakeText(this, "Hello from " , ToastLength.Long).Show();
+        //        }
+        //        else if (tag == gameButton[2])
+        //        {
+        //            // DoSomethingElse();
+        //        }
+        //        else if (tag == gameButton[3])
+        //        {
+        //            // DoSomethingElse();
+        //        }
+        //        else if (tag == gameButton[4])
+        //        {
+        //            // DoSomethingElse();
+        //        }
+        //        else if (tag == gameButton[5])
+        //        {
+        //            // DoSomethingElse();
+        //        }
+        //        else if (tag == gameButton[6])
+        //        {
+        //            // DoSomethingElse();
+        //        }
+        //    }
+        //}
 
         public void aColumnClick()
         {
@@ -222,9 +282,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (aClickCounter < 6)
-            {
-                aClickCounter++;
                 if (aColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -307,10 +364,6 @@ namespace Connect_four
                     }
 
                 }
-            }
-            else
-                return;
-
         }
 
         public void bColumnClick()
@@ -322,9 +375,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (bClickCounter < 6)
-            {
-                bClickCounter++;
                 if (bColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -407,7 +457,7 @@ namespace Connect_four
                     }
 
                 }
-            }
+            
         }
 
         public void cColumnClick()
@@ -419,9 +469,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (cClickCounter < 6)
-            {
-                cClickCounter++;
                 if (cColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -504,7 +551,7 @@ namespace Connect_four
                     }
 
                 }
-            }
+            
         }
 
         public void dColumnClick()
@@ -516,9 +563,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (dClickCounter < 6)
-            {
-                dClickCounter++;
                 if (dColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -601,7 +645,7 @@ namespace Connect_four
                     }
 
                 }
-            }
+            
         }
 
         public void eColumnClick()
@@ -613,9 +657,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (eClickCounter < 6)
-            {
-                eClickCounter++;
                 if (eColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -698,7 +739,7 @@ namespace Connect_four
                     }
 
                 }
-            }
+            
         }
 
         public void fColumnClick()
@@ -710,9 +751,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (fClickCounter < 6)
-            {
-                fClickCounter++;
                 if (fColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -795,7 +833,6 @@ namespace Connect_four
                     }
 
                 }
-            }
         }
 
         public void gColumnClick()
@@ -807,9 +844,6 @@ namespace Connect_four
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
-            if (gClickCounter < 6)
-            {
-                gClickCounter++;
                 if (gColumn[5].Alpha != canvasColor.Alpha)
                 {
                     if (player1Turn == true)
@@ -892,9 +926,8 @@ namespace Connect_four
                     }
 
                 }
-            }
+            
         }
     }
-
 
 }

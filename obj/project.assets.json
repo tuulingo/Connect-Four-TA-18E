@@ -1532,24 +1532,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hendrik\\.nuget\\packages\\": {},
+    "C:\\Users\\tuuli\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hendrik\\Connect_four\\Connect-Four-TA-18E\\Connect four.csproj",
+      "projectUniqueName": "C:\\Kooli v2rgid v\\Connect-Four-TA-18E\\Connect four.csproj",
       "projectName": "Connect four",
-      "projectPath": "C:\\Users\\Hendrik\\Connect_four\\Connect-Four-TA-18E\\Connect four.csproj",
-      "packagesPath": "C:\\Users\\Hendrik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hendrik\\Connect_four\\Connect-Four-TA-18E\\obj\\",
+      "projectPath": "C:\\Kooli v2rgid v\\Connect-Four-TA-18E\\Connect four.csproj",
+      "packagesPath": "C:\\Users\\tuuli\\.nuget\\packages\\",
+      "outputPath": "C:\\Kooli v2rgid v\\Connect-Four-TA-18E\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hendrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tuuli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
