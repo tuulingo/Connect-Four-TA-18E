@@ -27,6 +27,7 @@ namespace Connect_four
         private int fClickCounter = 0;
         private int gClickCounter = 0;
 
+        private GridLayout[,] gridLayoutArray = new GridLayout[6,7];
 
         private TextView[] aColumn = new TextView[6];
         private TextView[] bColumn = new TextView[6];
@@ -95,6 +96,9 @@ namespace Connect_four
                 var view = FindViewById<TextView>(Resources.GetIdentifier(textViewId, "id", PackageName));
                 gColumn[i] = view;
             }
+
+            var gridLayout = FindViewById<GridLayout>(Resource.Id.gridLayout);
+            gridLayout = gridLayoutArray[6,7];
 
             Context context = Application.Context;
             string text = "Column is full";
@@ -235,43 +239,19 @@ namespace Connect_four
             };
 
         }
-        //private void OnClick(object sender, EventArgs args)
-        //{
-        //    if (sender is Button btn)
-        //    {
-        //        btn.Click += OnClick;
-        //        var tag = btn;
 
-        //        if (tag == gameButton[0])
-        //        {
-        //            aColumnClick();
-        //        }
-        //        else if (tag == gameButton[1])
-        //        {
-        //            Toast.MakeText(this, "Hello from " , ToastLength.Long).Show();
-        //        }
-        //        else if (tag == gameButton[2])
-        //        {
-        //            // DoSomethingElse();
-        //        }
-        //        else if (tag == gameButton[3])
-        //        {
-        //            // DoSomethingElse();
-        //        }
-        //        else if (tag == gameButton[4])
-        //        {
-        //            // DoSomethingElse();
-        //        }
-        //        else if (tag == gameButton[5])
-        //        {
-        //            // DoSomethingElse();
-        //        }
-        //        else if (tag == gameButton[6])
-        //        {
-        //            // DoSomethingElse();
-        //        }
-        //    }
-        //}
+        private void CheckHorizontalWinner()
+        {
+            TextView[,] field = new TextView[6,7];
+
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 7; j++)
+                {
+                    field[i,j] = gridLayoutArray[i,j];
+                }
+            }
+        }
 
         public void aColumnClick()
         {
