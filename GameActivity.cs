@@ -27,8 +27,6 @@ namespace Connect_four
         private int fClickCounter = 0;
         private int gClickCounter = 0;
 
-        private GridLayout[,] gridLayoutArray = new GridLayout[6,7];
-
         private TextView[] aColumn = new TextView[6];
         private TextView[] bColumn = new TextView[6];
         private TextView[] cColumn = new TextView[6];
@@ -97,9 +95,6 @@ namespace Connect_four
                 gColumn[i] = view;
             }
 
-            var gridLayout = FindViewById<GridLayout>(Resource.Id.gridLayout);
-            gridLayout = gridLayoutArray[6,7];
-
             Context context = Application.Context;
             string text = "Column is full";
             ToastLength duration = ToastLength.Short;
@@ -108,6 +103,7 @@ namespace Connect_four
             {
                 if (aClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     aClickCounter++;
                     aColumnClick();
                     if (player1Turn == true)
@@ -127,6 +123,7 @@ namespace Connect_four
             {
                 if (bClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     bClickCounter++;
                     bColumnClick();
                     if (player1Turn == true)
@@ -146,6 +143,7 @@ namespace Connect_four
             {
                 if (cClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     cClickCounter++;
                     cColumnClick();
                     if (player1Turn == true)
@@ -165,6 +163,7 @@ namespace Connect_four
             {
                 if (dClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     dClickCounter++;
                     dColumnClick();
                     if (player1Turn == true)
@@ -184,6 +183,7 @@ namespace Connect_four
             {
                 if (eClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     eClickCounter++;
                     eColumnClick();
                     if (player1Turn == true)
@@ -203,6 +203,7 @@ namespace Connect_four
             {
                 if (fClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     fClickCounter++;
                     fColumnClick();
                     if (player1Turn == true)
@@ -222,6 +223,7 @@ namespace Connect_four
             {
                 if (gClickCounter < 6)
                 {
+                    CheckHorizontalWinner();
                     gClickCounter++;
                     gColumnClick();
                     if (player1Turn == true)
@@ -244,13 +246,39 @@ namespace Connect_four
         {
             TextView[,] field = new TextView[6,7];
 
-            for (int i = 0; i < 6; i++)
+            Context context = Application.Context;
+            string text = "Sen haigemees";
+            ToastLength duration = ToastLength.Short;
+
+            var playerColor1 = Resources.GetColor(Resource.Color.player1);
+            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+
+            var gridLayout = FindViewById<GridLayout>(Resource.Id.gridLayout);
+            var currentColumn = 0;
+            var currentRow = 0;
+            for (var i = 0; i < 42; i++)
             {
-                for (int j = 0; j < 7; j++)
+                var child = gridLayout.GetChildAt(i) as TextView;
+                field[currentRow, currentColumn] = child;
+                ColorDrawable canvasColor = (ColorDrawable)field[currentRow, currentColumn].Background;
+                
+
+                currentColumn++;
+
+                if (currentColumn == 7)
                 {
-                    field[i,j] = gridLayoutArray[i,j];
+                    currentColumn = 0;
+                    currentRow++;
+                }
+
+                if (field[0,1].Background == playerColor1)
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+
                 }
             }
+
         }
 
         public void aColumnClick()

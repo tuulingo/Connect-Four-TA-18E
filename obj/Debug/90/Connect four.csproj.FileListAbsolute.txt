@@ -1086,3 +1086,4 @@ C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GenerateJa
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\Connect four.csprojAssemblyReference.cache
+C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
