@@ -103,9 +103,8 @@ namespace Connect_four
             {
                 if (aClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     aClickCounter++;
-                    aColumnClick();
+                    aColumnClick(); 
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -117,15 +116,16 @@ namespace Connect_four
                     var toast = Toast.MakeText(context, text, duration);
                     toast.Show();
                 }
+                CheckHorizontalWinner();
             };
 
             gameButton[1].Click += delegate
             {
                 if (bClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     bClickCounter++;
                     bColumnClick();
+                    CheckHorizontalWinner();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -143,9 +143,9 @@ namespace Connect_four
             {
                 if (cClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     cClickCounter++;
                     cColumnClick();
+                    CheckHorizontalWinner();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -163,9 +163,9 @@ namespace Connect_four
             {
                 if (dClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     dClickCounter++;
                     dColumnClick();
+                    CheckHorizontalWinner();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -183,9 +183,9 @@ namespace Connect_four
             {
                 if (eClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     eClickCounter++;
                     eColumnClick();
+                    CheckHorizontalWinner();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -203,9 +203,9 @@ namespace Connect_four
             {
                 if (fClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     fClickCounter++;
                     fColumnClick();
+                    CheckHorizontalWinner();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -223,9 +223,9 @@ namespace Connect_four
             {
                 if (gClickCounter < 6)
                 {
-                    CheckHorizontalWinner();
                     gClickCounter++;
                     gColumnClick();
+                    CheckHorizontalWinner();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -250,8 +250,11 @@ namespace Connect_four
             string text = "Sen haigemees";
             ToastLength duration = ToastLength.Short;
 
+            var senhaige = FindViewById<TextView>(Resource.Id.A6);
+
             var playerColor1 = Resources.GetColor(Resource.Color.player1);
             var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1Drawable = Resources.GetDrawable(Resource.Drawable.player1Drawable);
 
             var gridLayout = FindViewById<GridLayout>(Resource.Id.gridLayout);
             var currentColumn = 0;
@@ -260,7 +263,7 @@ namespace Connect_four
             {
                 var child = gridLayout.GetChildAt(i) as TextView;
                 field[currentRow, currentColumn] = child;
-                ColorDrawable canvasColor = (ColorDrawable)field[currentRow, currentColumn].Background;
+                //ColorDrawable canvasColor = (ColorDrawable)field[currentRow, currentColumn].Background;
                 
 
                 currentColumn++;
@@ -271,12 +274,14 @@ namespace Connect_four
                     currentRow++;
                 }
 
-                if (field[0,1].Background == playerColor1)
-                {
-                    var toast = Toast.MakeText(context, text, duration);
-                    toast.Show();
+            }
 
-                }
+
+            if (senhaige.Background == playerColor1Drawable)
+            {
+                var toast = Toast.MakeText(context, text, duration);
+                toast.Show();
+
             }
 
         }

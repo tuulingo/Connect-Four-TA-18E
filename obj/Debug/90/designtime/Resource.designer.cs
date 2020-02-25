@@ -3211,13 +3211,19 @@ namespace Connect_four
 			public const int notify_panel_notification_icon_bg = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int start_game = 2131165295;
+			public const int player1Drawable = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int tooltip_frame_dark = 2131165296;
+			public const int player2Drawable = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int tooltip_frame_light = 2131165297;
+			public const int start_game = 2131165297;
+			
+			// aapt resource value: 0x7F070072
+			public const int tooltip_frame_dark = 2131165298;
+			
+			// aapt resource value: 0x7F070073
+			public const int tooltip_frame_light = 2131165299;
 			
 			static Drawable()
 			{
