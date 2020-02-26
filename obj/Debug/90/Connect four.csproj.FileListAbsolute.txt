@@ -287,24 +287,6 @@ C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\_BuildLibraryImp
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\resourcepaths.cache
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\resourcecache.stamp
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\res.flag
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\FB5B1CFFB677752C.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\3797ADA488775264.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\27861081DF772684.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\F4AE9E255E51D9FF.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\18B3B53D0D3657DE.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\5CF7DAF418364AE6.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\F7F6BED93E329C2A.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\B3B2D1102B328112.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\A3A36C357C32F5F2.stamp
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\FB5B1CFFB677752C.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\3797ADA488775264.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\27861081DF772684.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\F4AE9E255E51D9FF.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\18B3B53D0D3657DE.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\5CF7DAF418364AE6.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\F7F6BED93E329C2A.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\B3B2D1102B328112.flata
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\A3A36C357C32F5F2.flata
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\compiled.flata
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\Connect four.dll
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\Connect four.pdb
@@ -532,7 +514,6 @@ C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\app_shared_libraries\a
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\app_shared_libraries\x86\libxamarin-app.so
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\android\bin\classes.dex
-C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\_BuildAdditionalResourcesCache.stamp
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\_CleanIntermediateIfNuGetsChange.stamp
 C:\Users\Opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\_CompileToDalvik.stamp
@@ -1087,3 +1068,22 @@ C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GeneratePa
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\Connect four.csprojAssemblyReference.cache
 C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\87504BDCE38B8E50.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\4B9CFA87DD8BA918.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\5B8D47A28A8BDDF8.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\88A5C9060BAD2283.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\64B8E21E58CAACA2.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\20FC8DD74DCAB19A.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\8BFDE9FA6BCE6756.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\CFB986337ECE7A6E.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\DFA83B1629CE0E8E.stamp
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\87504BDCE38B8E50.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\4B9CFA87DD8BA918.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\5B8D47A28A8BDDF8.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\88A5C9060BAD2283.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\64B8E21E58CAACA2.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\20FC8DD74DCAB19A.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\8BFDE9FA6BCE6756.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\CFB986337ECE7A6E.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\DFA83B1629CE0E8E.flata
+C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

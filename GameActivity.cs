@@ -19,6 +19,8 @@ namespace Connect_four
     {
         private bool player1Turn = true;
 
+        private int roundCount = 0;
+
         private int aClickCounter = 0;
         private int bClickCounter = 0;
         private int cClickCounter = 0;
@@ -104,7 +106,7 @@ namespace Connect_four
                 if (aClickCounter < 6)
                 {
                     aClickCounter++;
-                    aColumnClick(); 
+                    aColumnClick();
                     if (player1Turn == true)
                     {
                         player1Turn = false;
@@ -116,7 +118,28 @@ namespace Connect_four
                     var toast = Toast.MakeText(context, text, duration);
                     toast.Show();
                 }
-                CheckHorizontalWinner();
+
+                roundCount++;
+
+                if (CheckHorizontalWinner())
+                {
+                    if (player1Turn)
+                    {
+                        Player1Wins.player1Wins();
+                    }
+                    else
+                    {
+                        Player2Wins.player2Wins();
+                    }
+                }
+                else if (roundCount >= 42)
+                {
+                    Draw.draw();
+                }
+                else
+                {
+                    player1Turn = !player1Turn;
+                }
             };
 
             gameButton[1].Click += delegate
@@ -131,6 +154,29 @@ namespace Connect_four
                         player1Turn = false;
                     }
                     else player1Turn = true;
+
+                    roundCount++;
+
+                    if(CheckHorizontalWinner())
+                    {
+                        if (player1Turn)
+                        {
+                            Player1Wins.player1Wins(); 
+                        }
+                        else
+                        {
+                            Player2Wins.player2Wins();
+                        }
+                    }
+                    else if(roundCount >= 42)
+                    {
+                        Draw.draw();
+                    }
+                    else
+                    {
+                        player1Turn = !player1Turn;
+                    }
+
                 }
                 else
                 {
@@ -242,7 +288,7 @@ namespace Connect_four
 
         }
 
-        private void CheckHorizontalWinner()
+        private Boolean CheckHorizontalWinner()
         {
             TextView[,] field = new TextView[6,7];
 
@@ -251,6 +297,7 @@ namespace Connect_four
             ToastLength duration = ToastLength.Short;
 
             var senhaige = FindViewById<TextView>(Resource.Id.A6);
+            var senhaige2 = FindViewById<TextView>(Resource.Id.A5);
 
             var playerColor1 = Resources.GetColor(Resource.Color.player1);
             var playerColor2 = Resources.GetColor(Resource.Color.player2);
@@ -263,7 +310,6 @@ namespace Connect_four
             {
                 var child = gridLayout.GetChildAt(i) as TextView;
                 field[currentRow, currentColumn] = child;
-                //ColorDrawable canvasColor = (ColorDrawable)field[currentRow, currentColumn].Background;
                 
 
                 currentColumn++;
@@ -277,21 +323,22 @@ namespace Connect_four
             }
 
 
-            if (senhaige.Background == playerColor1Drawable)
+            if (senhaige.Background == senhaige2.Background)
             {
                 var toast = Toast.MakeText(context, text, duration);
-                toast.Show();
-
+                toast.Show();                
             }
-
+            return true;
         }
 
         public void aColumnClick()
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -299,12 +346,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[5].SetBackgroundColor(playerColor1);
+                        aColumn[5].SetBackgroundDrawable(playerColor1);
                         aColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        aColumn[5].SetBackgroundColor(playerColor2);
+                        aColumn[5].SetBackgroundDrawable(playerColor2);
                         aColumn[5].Alpha = 255;
                     }
                 }
@@ -312,12 +359,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[4].SetBackgroundColor(playerColor1);
+                        aColumn[4].SetBackgroundDrawable(playerColor1);
                         aColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        aColumn[4].SetBackgroundColor(playerColor2);
+                        aColumn[4].SetBackgroundDrawable(playerColor2);
                         aColumn[4].Alpha = 255;
                     }
                 }
@@ -325,12 +372,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[3].SetBackgroundColor(playerColor1);
+                        aColumn[3].SetBackgroundDrawable(playerColor1);
                         aColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        aColumn[3].SetBackgroundColor(playerColor2);
+                        aColumn[3].SetBackgroundDrawable(playerColor2);
                         aColumn[3].Alpha = 255;
                     }
 
@@ -339,12 +386,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[2].SetBackgroundColor(playerColor1);
+                        aColumn[2].SetBackgroundDrawable(playerColor1);
                         aColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        aColumn[2].SetBackgroundColor(playerColor2);
+                        aColumn[2].SetBackgroundDrawable(playerColor2);
                         aColumn[2].Alpha = 255;
                     }
 
@@ -353,12 +400,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[1].SetBackgroundColor(playerColor1);
+                        aColumn[1].SetBackgroundDrawable(playerColor1);
                         aColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        aColumn[1].SetBackgroundColor(playerColor2);
+                        aColumn[1].SetBackgroundDrawable(playerColor2);
                         aColumn[1].Alpha = 255;
                     }
 
@@ -367,12 +414,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[0].SetBackgroundColor(playerColor1);
+                        aColumn[0].SetBackgroundDrawable(playerColor1);
                         aColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        aColumn[0].SetBackgroundColor(playerColor2);
+                        aColumn[0].SetBackgroundDrawable(playerColor2);
                         aColumn[0].Alpha = 255;
                     }
 
@@ -383,8 +430,10 @@ namespace Connect_four
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -392,12 +441,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        bColumn[5].SetBackgroundColor(playerColor1);
+                        bColumn[5].SetBackgroundDrawable(playerColor1);
                         bColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        bColumn[5].SetBackgroundColor(playerColor2);
+                        bColumn[5].SetBackgroundDrawable(playerColor2);
                         bColumn[5].Alpha = 255;
                     }
                 }
@@ -405,12 +454,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        bColumn[4].SetBackgroundColor(playerColor1);
+                        bColumn[4].SetBackgroundDrawable(playerColor1);
                         bColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        bColumn[4].SetBackgroundColor(playerColor2);
+                        bColumn[4].SetBackgroundDrawable(playerColor2);
                         bColumn[4].Alpha = 255;
                     }
                 }
@@ -418,12 +467,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        bColumn[3].SetBackgroundColor(playerColor1);
+                        bColumn[3].SetBackgroundDrawable(playerColor1);
                         bColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        bColumn[3].SetBackgroundColor(playerColor2);
+                        bColumn[3].SetBackgroundDrawable(playerColor2);
                         bColumn[3].Alpha = 255;
                     }
 
@@ -432,12 +481,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        bColumn[2].SetBackgroundColor(playerColor1);
+                        bColumn[2].SetBackgroundDrawable(playerColor1);
                         bColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        bColumn[2].SetBackgroundColor(playerColor2);
+                        bColumn[2].SetBackgroundDrawable(playerColor2);
                         bColumn[2].Alpha = 255;
                     }
 
@@ -446,12 +495,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        bColumn[1].SetBackgroundColor(playerColor1);
+                        bColumn[1].SetBackgroundDrawable(playerColor1);
                         bColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        bColumn[1].SetBackgroundColor(playerColor2);
+                        bColumn[1].SetBackgroundDrawable(playerColor2);
                         bColumn[1].Alpha = 255;
                     }
 
@@ -460,12 +509,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        bColumn[0].SetBackgroundColor(playerColor1);
+                        bColumn[0].SetBackgroundDrawable(playerColor1);
                         bColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        bColumn[0].SetBackgroundColor(playerColor2);
+                        bColumn[0].SetBackgroundDrawable(playerColor2);
                         bColumn[0].Alpha = 255;
                     }
 
@@ -477,8 +526,10 @@ namespace Connect_four
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -486,12 +537,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        cColumn[5].SetBackgroundColor(playerColor1);
+                        cColumn[5].SetBackgroundDrawable(playerColor1);
                         cColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        cColumn[5].SetBackgroundColor(playerColor2);
+                        cColumn[5].SetBackgroundDrawable(playerColor2);
                         cColumn[5].Alpha = 255;
                     }
                 }
@@ -499,12 +550,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        cColumn[4].SetBackgroundColor(playerColor1);
+                        cColumn[4].SetBackgroundDrawable(playerColor1);
                         cColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        cColumn[4].SetBackgroundColor(playerColor2);
+                        cColumn[4].SetBackgroundDrawable(playerColor2);
                         cColumn[4].Alpha = 255;
                     }
                 }
@@ -512,12 +563,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        cColumn[3].SetBackgroundColor(playerColor1);
+                        cColumn[3].SetBackgroundDrawable(playerColor1);
                         cColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        cColumn[3].SetBackgroundColor(playerColor2);
+                        cColumn[3].SetBackgroundDrawable(playerColor2);
                         cColumn[3].Alpha = 255;
                     }
 
@@ -526,12 +577,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        cColumn[2].SetBackgroundColor(playerColor1);
+                        cColumn[2].SetBackgroundDrawable(playerColor1);
                         cColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        cColumn[2].SetBackgroundColor(playerColor2);
+                        cColumn[2].SetBackgroundDrawable(playerColor2);
                         cColumn[2].Alpha = 255;
                     }
 
@@ -540,12 +591,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        cColumn[1].SetBackgroundColor(playerColor1);
+                        cColumn[1].SetBackgroundDrawable(playerColor1);
                         cColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        cColumn[1].SetBackgroundColor(playerColor2);
+                        cColumn[1].SetBackgroundDrawable(playerColor2);
                         cColumn[1].Alpha = 255;
                     }
 
@@ -554,12 +605,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        cColumn[0].SetBackgroundColor(playerColor1);
+                        cColumn[0].SetBackgroundDrawable(playerColor1);
                         cColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        cColumn[0].SetBackgroundColor(playerColor2);
+                        cColumn[0].SetBackgroundDrawable(playerColor2);
                         cColumn[0].Alpha = 255;
                     }
 
@@ -571,8 +622,10 @@ namespace Connect_four
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -580,12 +633,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        dColumn[5].SetBackgroundColor(playerColor1);
+                        dColumn[5].SetBackgroundDrawable(playerColor1);
                         dColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        dColumn[5].SetBackgroundColor(playerColor2);
+                        dColumn[5].SetBackgroundDrawable(playerColor2);
                         dColumn[5].Alpha = 255;
                     }
                 }
@@ -593,12 +646,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        dColumn[4].SetBackgroundColor(playerColor1);
+                        dColumn[4].SetBackgroundDrawable(playerColor1);
                         dColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        dColumn[4].SetBackgroundColor(playerColor2);
+                        dColumn[4].SetBackgroundDrawable(playerColor2);
                         dColumn[4].Alpha = 255;
                     }
                 }
@@ -606,12 +659,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        dColumn[3].SetBackgroundColor(playerColor1);
+                        dColumn[3].SetBackgroundDrawable(playerColor1);
                         dColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        dColumn[3].SetBackgroundColor(playerColor2);
+                        dColumn[3].SetBackgroundDrawable(playerColor2);
                         dColumn[3].Alpha = 255;
                     }
 
@@ -620,12 +673,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        dColumn[2].SetBackgroundColor(playerColor1);
+                        dColumn[2].SetBackgroundDrawable(playerColor1);
                         dColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        dColumn[2].SetBackgroundColor(playerColor2);
+                        dColumn[2].SetBackgroundDrawable(playerColor2);
                         dColumn[2].Alpha = 255;
                     }
 
@@ -634,12 +687,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        dColumn[1].SetBackgroundColor(playerColor1);
+                        dColumn[1].SetBackgroundDrawable(playerColor1);
                         dColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        dColumn[1].SetBackgroundColor(playerColor2);
+                        dColumn[1].SetBackgroundDrawable(playerColor2);
                         dColumn[1].Alpha = 255;
                     }
 
@@ -648,12 +701,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        dColumn[0].SetBackgroundColor(playerColor1);
+                        dColumn[0].SetBackgroundDrawable(playerColor1);
                         dColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        dColumn[0].SetBackgroundColor(playerColor2);
+                        dColumn[0].SetBackgroundDrawable(playerColor2);
                         dColumn[0].Alpha = 255;
                     }
 
@@ -665,8 +718,10 @@ namespace Connect_four
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -674,12 +729,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        eColumn[5].SetBackgroundColor(playerColor1);
+                        eColumn[5].SetBackgroundDrawable(playerColor1);
                         eColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        eColumn[5].SetBackgroundColor(playerColor2);
+                        eColumn[5].SetBackgroundDrawable(playerColor2);
                         eColumn[5].Alpha = 255;
                     }
                 }
@@ -687,12 +742,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        eColumn[4].SetBackgroundColor(playerColor1);
+                        eColumn[4].SetBackgroundDrawable(playerColor1);
                         eColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        eColumn[4].SetBackgroundColor(playerColor2);
+                        eColumn[4].SetBackgroundDrawable(playerColor2);
                         eColumn[4].Alpha = 255;
                     }
                 }
@@ -700,12 +755,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        eColumn[3].SetBackgroundColor(playerColor1);
+                        eColumn[3].SetBackgroundDrawable(playerColor1);
                         eColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        eColumn[3].SetBackgroundColor(playerColor2);
+                        eColumn[3].SetBackgroundDrawable(playerColor2);
                         eColumn[3].Alpha = 255;
                     }
 
@@ -714,12 +769,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        eColumn[2].SetBackgroundColor(playerColor1);
+                        eColumn[2].SetBackgroundDrawable(playerColor1);
                         eColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        eColumn[2].SetBackgroundColor(playerColor2);
+                        eColumn[2].SetBackgroundDrawable(playerColor2);
                         eColumn[2].Alpha = 255;
                     }
 
@@ -728,12 +783,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        eColumn[1].SetBackgroundColor(playerColor1);
+                        eColumn[1].SetBackgroundDrawable(playerColor1);
                         eColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        eColumn[1].SetBackgroundColor(playerColor2);
+                        eColumn[1].SetBackgroundDrawable(playerColor2);
                         eColumn[1].Alpha = 255;
                     }
 
@@ -742,12 +797,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        eColumn[0].SetBackgroundColor(playerColor1);
+                        eColumn[0].SetBackgroundDrawable(playerColor1);
                         eColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        eColumn[0].SetBackgroundColor(playerColor2);
+                        eColumn[0].SetBackgroundDrawable(playerColor2);
                         eColumn[0].Alpha = 255;
                     }
 
@@ -759,8 +814,10 @@ namespace Connect_four
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -768,12 +825,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        fColumn[5].SetBackgroundColor(playerColor1);
+                        fColumn[5].SetBackgroundDrawable(playerColor1);
                         fColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        fColumn[5].SetBackgroundColor(playerColor2);
+                        fColumn[5].SetBackgroundDrawable(playerColor2);
                         fColumn[5].Alpha = 255;
                     }
                 }
@@ -781,12 +838,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        fColumn[4].SetBackgroundColor(playerColor1);
+                        fColumn[4].SetBackgroundDrawable(playerColor1);
                         fColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        fColumn[4].SetBackgroundColor(playerColor2);
+                        fColumn[4].SetBackgroundDrawable(playerColor2);
                         fColumn[4].Alpha = 255;
                     }
                 }
@@ -794,12 +851,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        fColumn[3].SetBackgroundColor(playerColor1);
+                        fColumn[3].SetBackgroundDrawable(playerColor1);
                         fColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        fColumn[3].SetBackgroundColor(playerColor2);
+                        fColumn[3].SetBackgroundDrawable(playerColor2);
                         fColumn[3].Alpha = 255;
                     }
 
@@ -808,12 +865,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        fColumn[2].SetBackgroundColor(playerColor1);
+                        fColumn[2].SetBackgroundDrawable(playerColor1);
                         fColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        fColumn[2].SetBackgroundColor(playerColor2);
+                        fColumn[2].SetBackgroundDrawable(playerColor2);
                         fColumn[2].Alpha = 255;
                     }
 
@@ -822,12 +879,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        fColumn[1].SetBackgroundColor(playerColor1);
+                        fColumn[1].SetBackgroundDrawable(playerColor1);
                         fColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        fColumn[1].SetBackgroundColor(playerColor2);
+                        fColumn[1].SetBackgroundDrawable(playerColor2);
                         fColumn[1].Alpha = 255;
                     }
 
@@ -836,12 +893,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        fColumn[0].SetBackgroundColor(playerColor1);
+                        fColumn[0].SetBackgroundDrawable(playerColor1);
                         fColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        fColumn[0].SetBackgroundColor(playerColor2);
+                        fColumn[0].SetBackgroundDrawable(playerColor2);
                         fColumn[0].Alpha = 255;
                     }
 
@@ -852,8 +909,10 @@ namespace Connect_four
         {
             var test = FindViewById<TextView>(Resource.Id.B6);
             var defaultColor = Resources.GetColor(Resource.Color.white);
-            var playerColor1 = Resources.GetColor(Resource.Color.player1);
-            var playerColor2 = Resources.GetColor(Resource.Color.player2);
+            var playerColor11 = Resources.GetColor(Resource.Color.player1);
+            var playerColor22 = Resources.GetColor(Resource.Color.player2);
+            var playerColor1 = Resources.GetDrawable(Resource.Drawable.player1Drawable);
+            var playerColor2 = Resources.GetDrawable(Resource.Drawable.player2Drawable);
             ColorDrawable canvasColor = (ColorDrawable)test.Background;
             int colorId = canvasColor.Color;
 
@@ -861,12 +920,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        gColumn[5].SetBackgroundColor(playerColor1);
+                        gColumn[5].SetBackgroundDrawable(playerColor1);
                         gColumn[5].Alpha = 255;
                     }
                     else
                     {
-                        gColumn[5].SetBackgroundColor(playerColor2);
+                        gColumn[5].SetBackgroundDrawable(playerColor2);
                         gColumn[5].Alpha = 255;
                     }
                 }
@@ -874,12 +933,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        gColumn[4].SetBackgroundColor(playerColor1);
+                        gColumn[4].SetBackgroundDrawable(playerColor1);
                         gColumn[4].Alpha = 255;
                     }
                     else
                     {
-                        gColumn[4].SetBackgroundColor(playerColor2);
+                        gColumn[4].SetBackgroundDrawable(playerColor2);
                         gColumn[4].Alpha = 255;
                     }
                 }
@@ -887,12 +946,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        gColumn[3].SetBackgroundColor(playerColor1);
+                        gColumn[3].SetBackgroundDrawable(playerColor1);
                         gColumn[3].Alpha = 255;
                     }
                     else
                     {
-                        gColumn[3].SetBackgroundColor(playerColor2);
+                        gColumn[3].SetBackgroundDrawable(playerColor2);
                         gColumn[3].Alpha = 255;
                     }
 
@@ -901,12 +960,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        gColumn[2].SetBackgroundColor(playerColor1);
+                        gColumn[2].SetBackgroundDrawable(playerColor1);
                         gColumn[2].Alpha = 255;
                     }
                     else
                     {
-                        gColumn[2].SetBackgroundColor(playerColor2);
+                        gColumn[2].SetBackgroundDrawable(playerColor2);
                         gColumn[2].Alpha = 255;
                     }
 
@@ -915,12 +974,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        gColumn[1].SetBackgroundColor(playerColor1);
+                        gColumn[1].SetBackgroundDrawable(playerColor1);
                         gColumn[1].Alpha = 255;
                     }
                     else
                     {
-                        gColumn[1].SetBackgroundColor(playerColor2);
+                        gColumn[1].SetBackgroundDrawable(playerColor2);
                         gColumn[1].Alpha = 255;
                     }
 
@@ -929,12 +988,12 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        gColumn[0].SetBackgroundColor(playerColor1);
+                        gColumn[0].SetBackgroundDrawable(playerColor1);
                         gColumn[0].Alpha = 255;
                     }
                     else
                     {
-                        gColumn[0].SetBackgroundColor(playerColor2);
+                        gColumn[0].SetBackgroundDrawable(playerColor2);
                         gColumn[0].Alpha = 255;
                     }
 
