@@ -8,6 +8,12 @@
         android:paddingTop="200dp"
         android:minHeight="25px"
         android:id="@+id/linearLayout1" >
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn:Yellow"
+        android:textSize="25sp"
+        android:id="@+id/Turn" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_gravity="center"

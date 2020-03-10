@@ -1066,7 +1066,6 @@ C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_CopyPdbFil
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Hendrik\Connect_four\Connect-Four-TA-18E\obj\Debug\90\Connect four.csprojAssemblyReference.cache
 C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\87504BDCE38B8E50.stamp
 C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\4B9CFA87DD8BA918.stamp
 C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\5B8D47A28A8BDDF8.stamp

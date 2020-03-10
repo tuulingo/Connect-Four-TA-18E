@@ -1001,6 +1001,18 @@ namespace Connect_four
                 }
             
         }
+        private void currentTurn()
+        {
+            var currentPlayer = FindViewById<TextView>(Resource.Id.Turn);
+            if (player1Turn == true)
+            {
+                currentPlayer.Text = "Turn: Yellow";
+            }
+            else
+            {
+                currentPlayer.Text = "Turn: Red";
+            }
+        }
     }
 
 }
