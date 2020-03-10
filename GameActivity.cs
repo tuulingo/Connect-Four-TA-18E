@@ -112,6 +112,24 @@ namespace Connect_four
                         player1Turn = false;
                     }
                     else player1Turn = true;
+
+                    if (CheckHorizontalWinner() == true)
+                    {
+                        if (player1Turn == true)
+                        {
+                            Player1Wins.player1Wins();
+                        }
+                        else
+                        {
+                            Player2Wins.player2Wins();
+                        }
+                    }
+                    else if (roundCount >= 42)
+                    {
+                        Draw.draw();
+                        player1Turn = !player1Turn;
+                    }
+                    roundCount++;
                 }
                 else
                 {
@@ -119,27 +137,9 @@ namespace Connect_four
                     toast.Show();
                 }
 
-                roundCount++;
+                
 
-                if (CheckHorizontalWinner())
-                {
-                    if (player1Turn)
-                    {
-                        Player1Wins.player1Wins();
-                    }
-                    else
-                    {
-                        Player2Wins.player2Wins();
-                    }
-                }
-                else if (roundCount >= 42)
-                {
-                    Draw.draw();
-                }
-                else
-                {
-                    player1Turn = !player1Turn;
-                }
+                
             };
 
             gameButton[1].Click += delegate
@@ -155,27 +155,23 @@ namespace Connect_four
                     }
                     else player1Turn = true;
 
-                    roundCount++;
-
-                    if(CheckHorizontalWinner())
+                    if (CheckHorizontalWinner() == true)
                     {
-                        if (player1Turn)
+                        if (player1Turn == true)
                         {
-                            Player1Wins.player1Wins(); 
+                            Player1Wins.player1Wins();
                         }
                         else
                         {
                             Player2Wins.player2Wins();
                         }
                     }
-                    else if(roundCount >= 42)
+                    else if (roundCount >= 42)
                     {
                         Draw.draw();
-                    }
-                    else
-                    {
                         player1Turn = !player1Turn;
                     }
+                    roundCount++;
 
                 }
                 else
@@ -323,12 +319,17 @@ namespace Connect_four
             }
 
 
-            if (senhaige.Background == senhaige2.Background)
+            if (senhaige.Alpha == 255)
             {
                 var toast = Toast.MakeText(context, text, duration);
-                toast.Show();                
+                toast.Show();   
+                return true;
             }
-            return true;
+            else
+            {
+                return false;
+            }
+
         }
 
         public void aColumnClick()
@@ -346,7 +347,7 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[5].SetBackgroundDrawable(playerColor1);
+                        aColumn[5].SetBackgroundResource(playerColor11);
                         aColumn[5].Alpha = 255;
                     }
                     else
