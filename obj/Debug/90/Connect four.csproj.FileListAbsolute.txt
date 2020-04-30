@@ -1085,4 +1085,3 @@ C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\8BFDE9FA6BCE6756
 C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\CFB986337ECE7A6E.flata
 C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\flata\DFA83B1629CE0E8E.flata
 C:\Users\opilane\Desktop\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
-C:\Kooli v2rgid v\Connect-Four-TA-18E\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

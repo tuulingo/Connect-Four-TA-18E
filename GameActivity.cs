@@ -286,10 +286,10 @@ namespace Connect_four
 
         private Boolean CheckHorizontalWinner()
         {
-            TextView[,] field = new TextView[6,7];
+            TextView[,] field = new TextView[5,6];
 
             Context context = Application.Context;
-            string text = "Sen haigemees";
+            string text = "LIOT";
             ToastLength duration = ToastLength.Short;
 
             var senhaige = FindViewById<TextView>(Resource.Id.A6);
@@ -316,19 +316,15 @@ namespace Connect_four
                     currentRow++;
                 }
 
-            }
+                if (((ColorDrawable)field[5, 3].Background).Color == playerColor1 && ((ColorDrawable)field[4, 3].Background).Color == playerColor1)
+                {
+                    var toast = Toast.MakeText(context, text, duration);
+                    toast.Show();
+                    return true;
+                }
 
-
-            if (senhaige.Alpha == 255)
-            {
-                var toast = Toast.MakeText(context, text, duration);
-                toast.Show();   
-                return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
 
         }
 
@@ -347,7 +343,7 @@ namespace Connect_four
                 {
                     if (player1Turn == true)
                     {
-                        aColumn[5].SetBackgroundResource(playerColor11);
+                        aColumn[5].SetBackgroundDrawable(playerColor1);
                         aColumn[5].Alpha = 255;
                     }
                     else
